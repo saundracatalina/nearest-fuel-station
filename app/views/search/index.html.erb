@@ -1,0 +1,10 @@
+<h1>The Closest Electric Fuel Station To Me</h1>
+
+<% @fuel_station.each do |info| %>
+  <section class="station">
+      <h3 class="name">Station Name: <%= info[:station_name] %></h3>
+      <h3 class="address">Address: <%= info[:street_address] %></h3>
+      <h3 class="fuel_type">Fuel Type: <%= info[:fuel_type_code] %></h3>
+      <h3 class="access_times">Access Times: <%= info[:access_days_time] %></h3>
+  </section>
+<% end %>
