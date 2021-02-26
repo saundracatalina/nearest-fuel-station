@@ -9,6 +9,7 @@ describe 'search results for closest electric station to Turing' do
 
     expect(current_path).to eq(search_path)
 
+    expect(page).to have_content("The Closest Electric Fuel Station To Me")
     expect(page).to have_css('.station', count: 1)
     expect(page).to have_css('.name', count: 1)
     expect(page).to have_css('.address', count: 1)
@@ -16,7 +17,9 @@ describe 'search results for closest electric station to Turing' do
     expect(page).to have_css('.access_times', count: 1)
   end
 
-  it 'can see the distance to that station and turn-by-turn directions'
+  it 'can see the distance to that station and turn-by-turn directions' do
+    
+  end
 end
 
 # As a user
